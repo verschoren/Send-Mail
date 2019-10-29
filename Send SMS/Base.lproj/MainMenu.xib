@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="daveReference" destination="Az7-4S-GVQ" id="ZPw-bK-2ZM"/>
+                <outlet property="klantNummer" destination="xRd-Xp-frc" id="pYl-15-mIT"/>
+                <outlet property="phoneNumber" destination="AQ3-OB-4SY" id="4kd-j1-Rzq"/>
+                <outlet property="radioGenk" destination="c03-M7-ozW" id="50z-iq-HQr"/>
+                <outlet property="radioGent" destination="r4g-h7-hog" id="4up-db-B3n"/>
+                <outlet property="radioHasselt" destination="xSt-ae-3C3" id="WZ0-sP-WjW"/>
+                <outlet property="radioLatem" destination="iB4-42-NE0" id="FBL-mO-ajn"/>
+                <outlet property="radioLier" destination="rN5-Qv-nXA" id="cOf-FV-twm"/>
+                <outlet property="radioNoorderlaan" destination="f7P-yy-4cG" id="EgO-mR-xN7"/>
+                <outlet property="radioOostende" destination="IXX-BY-4Qo" id="3Xz-QZ-Ftn"/>
+                <outlet property="radioTheater" destination="2af-1g-wkt" id="zoE-HZ-ewW"/>
+                <outlet property="radioTypeRetail" destination="Uh4-YC-csy" id="KTW-vg-CD2"/>
+                <outlet property="radioTypeService" destination="Oz5-Wj-RXK" id="f0t-uO-3yd"/>
+                <outlet property="radioWaasland" destination="Dbo-bs-gRD" id="ZOJ-01-the"/>
+                <outlet property="radioWijnegem" destination="9g4-bm-O23" id="D8l-rf-FlE"/>
+                <outlet property="resultMessage" destination="fwh-4N-mvI" id="jaY-h3-5kj"/>
+                <outlet property="theWindow" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="Send Mail" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Send Mail" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About Send Mail" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                            <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                            <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                            <menuItem title="Services" id="NMo-om-nkz">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                            <menuItem title="Hide Send Mail" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Quit Send Mail" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="Send Mail" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="494" height="323"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <value key="minSize" type="size" width="494" height="323"/>
+            <value key="maxSize" type="size" width="494" height="323"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="494" height="323"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zBs-wq-4qH">
+                        <rect key="frame" x="18" y="84" width="225" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Email Klant" id="Up6-qc-iRg">
+                            <font key="font" metaFont="systemBold"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hYm-r2-WOk">
+                        <rect key="frame" x="281" y="194" width="188" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Filiaal" id="Naa-IH-dSk">
+                            <font key="font" metaFont="systemBold"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="beS-kL-oTI">
+                        <rect key="frame" x="18" y="194" width="124" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Dave Referentie" id="33I-UV-jWy">
+                            <font key="font" metaFont="systemBold"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Az7-4S-GVQ">
+                        <rect key="frame" x="20" y="164" width="120" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="TF/12345" drawsBackground="YES" id="NZN-kI-4Xj">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c03-M7-ozW">
+                        <rect key="frame" x="282" y="169" width="54" height="18"/>
+                        <buttonCell key="cell" type="radio" title="Genk" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="FHl-G2-YlC">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="radioClicked:" target="Voe-Tx-rLC" id="Bim-6X-E2i"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rN5-Qv-nXA">
+                        <rect key="frame" x="282" y="78" width="45" height="18"/>
+                        <buttonCell key="cell" type="radio" title="Lier" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="7qq-st-p8F">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="radioClicked:" target="Voe-Tx-rLC" id="rFE-qU-qmA"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r4g-h7-hog">
+                        <rect key="frame" x="282" y="145" width="52" height="18"/>
+                        <buttonCell key="cell" type="radio" title="Gent" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="4rK-rH-13I">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="radioClicked:" target="Voe-Tx-rLC" id="ftK-j7-tUv"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f7P-yy-4cG">
+                        <rect key="frame" x="372" y="169" width="97" height="18"/>
+                        <buttonCell key="cell" type="radio" title="Noorderlaan" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="SfB-qk-xfi">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="radioClicked:" target="Voe-Tx-rLC" id="fGT-k6-SUM"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xSt-ae-3C3">
+                        <rect key="frame" x="282" y="122" width="68" height="18"/>
+                        <buttonCell key="cell" type="radio" title="Hasselt" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="PKW-3m-hMa">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="radioClicked:" target="Voe-Tx-rLC" id="oU0-Gv-G9W"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2af-1g-wkt">
+                        <rect key="frame" x="372" y="122" width="70" height="18"/>
+                        <buttonCell key="cell" type="radio" title="Theater" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Aoq-Vd-mGj">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="radioClicked:" target="Voe-Tx-rLC" id="Wjh-k5-TT2"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iB4-42-NE0">
+                        <rect key="frame" x="282" y="100" width="60" height="18"/>
+                        <buttonCell key="cell" type="radio" title="Latem" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="SBK-1g-63K">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="radioClicked:" target="Voe-Tx-rLC" id="vJB-ch-En2"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dbo-bs-gRD">
+                        <rect key="frame" x="372" y="100" width="81" height="18"/>
+                        <buttonCell key="cell" type="radio" title="Waasland" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="wbR-yD-xr3">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="radioClicked:" target="Voe-Tx-rLC" id="f4b-XQ-w4T"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9g4-bm-O23">
+                        <rect key="frame" x="371" y="78" width="83" height="18"/>
+                        <buttonCell key="cell" type="radio" title="Wijnegem" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Peb-Rz-1dI">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="radioClicked:" target="Voe-Tx-rLC" id="NvY-xp-Yex"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IXX-BY-4Qo">
+                        <rect key="frame" x="372" y="145" width="81" height="18"/>
+                        <buttonCell key="cell" type="radio" title="Oostende" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="KL4-uk-gf5">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="radioClicked:" target="Voe-Tx-rLC" id="wUV-UU-Cs2"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oz5-Wj-RXK">
+                        <rect key="frame" x="19" y="260" width="83" height="18"/>
+                        <buttonCell key="cell" type="radio" title="iPhone SE" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="r6I-hw-nT7">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="radioTypeClicked:" target="Voe-Tx-rLC" id="Ymj-rj-S60"/>
+                        </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uh4-YC-csy">
+                        <rect key="frame" x="19" y="236" width="82" height="18"/>
+                        <buttonCell key="cell" type="radio" title="Bestelling" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="1gz-m6-LQX">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="radioTypeClicked:" target="Voe-Tx-rLC" id="fkU-6O-hk3"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sPO-pr-Frp">
+                        <rect key="frame" x="18" y="285" width="90" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Type" id="BFb-hK-HIU">
+                            <font key="font" metaFont="systemBold"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <scrollView focusRingType="none" fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwk-sr-Wef">
+                        <rect key="frame" x="232" y="254" width="242" height="48"/>
+                        <clipView key="contentView" ambiguous="YES" copiesOnScroll="NO" id="nsP-Pp-Ag0">
+                            <rect key="frame" x="0.0" y="0.0" width="242" height="48"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView ambiguous="YES" editable="NO" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="fwh-4N-mvI">
+                                    <rect key="frame" x="0.0" y="0.0" width="242" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" name="windowBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="242" height="48"/>
+                                    <size key="maxSize" width="463" height="10000000"/>
+                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="242" height="48"/>
+                                    <size key="maxSize" width="463" height="10000000"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="Fed-8D-MeI">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Aw6-bh-BBF">
+                            <rect key="frame" x="-100" y="-100" width="16" height="71"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xRd-Xp-frc">
+                        <rect key="frame" x="20" y="109" width="120" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="optioneel" drawsBackground="YES" id="B0h-HU-oLl">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6PZ-zw-nzL">
+                        <rect key="frame" x="18" y="139" width="124" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Voornaam Klant" id="ZSd-iD-fou">
+                            <font key="font" metaFont="systemBold"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AQ3-OB-4SY">
+                        <rect key="frame" x="20" y="54" width="240" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="johnappleseed@me.com" drawsBackground="YES" id="xFs-WX-YaW">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XAc-xt-8lY">
+                        <rect key="frame" x="377" y="13" width="103" height="32"/>
+                        <buttonCell key="cell" type="push" title="Send Mail" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="n7R-1Y-dsA">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="buttonClicked:" target="Voe-Tx-rLC" id="8cq-0q-iMw"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="336" y="380.5"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="5hX-f9-H3P"/>
+        <buttonCell type="radio" title="Radio" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="pZB-ps-nhy">
+            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+            <font key="font" metaFont="system"/>
+        </buttonCell>
+    </objects>
+</document>

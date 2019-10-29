@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF557AEC1C90BAE7007DE147 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF557AEB1C90BAE7007DE147 /* MainMenu.xib */; };
+		FF6B50CD1C908D810088C10D /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6B50CC1C908D810088C10D /* AppleScriptObjC.framework */; };
+		FF6B50D11C908D810088C10D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6B50D01C908D810088C10D /* main.m */; };
+		FF6B50D31C908D810088C10D /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = FF6B50D21C908D810088C10D /* AppDelegate.applescript */; };
+		FF6B50D51C908D810088C10D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF6B50D41C908D810088C10D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF557AEB1C90BAE7007DE147 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FF6B50C91C908D810088C10D /* Send Mail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Send Mail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF6B50CC1C908D810088C10D /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		FF6B50D01C908D810088C10D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF6B50D21C908D810088C10D /* AppDelegate.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = AppDelegate.applescript; sourceTree = "<group>"; };
+		FF6B50D41C908D810088C10D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF6B50D91C908D810088C10D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF6B50C61C908D810088C10D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6B50CD1C908D810088C10D /* AppleScriptObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF6B50C01C908D810088C10D = {
+			isa = PBXGroup;
+			children = (
+				FF6B50CE1C908D810088C10D /* Send SMS */,
+				FF6B50CB1C908D810088C10D /* Frameworks */,
+				FF6B50CA1C908D810088C10D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF6B50CA1C908D810088C10D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF6B50C91C908D810088C10D /* Send Mail.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF6B50CB1C908D810088C10D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF6B50CC1C908D810088C10D /* AppleScriptObjC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF6B50CE1C908D810088C10D /* Send SMS */ = {
+			isa = PBXGroup;
+			children = (
+				FF557AEB1C90BAE7007DE147 /* MainMenu.xib */,
+				FF6B50D21C908D810088C10D /* AppDelegate.applescript */,
+				FF6B50D41C908D810088C10D /* Assets.xcassets */,
+				FF6B50D91C908D810088C10D /* Info.plist */,
+				FF6B50CF1C908D810088C10D /* Supporting Files */,
+			);
+			path = "Send SMS";
+			sourceTree = "<group>";
+		};
+		FF6B50CF1C908D810088C10D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF6B50D01C908D810088C10D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF6B50C81C908D810088C10D /* Send Mail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF6B50DC1C908D810088C10D /* Build configuration list for PBXNativeTarget "Send Mail" */;
+			buildPhases = (
+				FF6B50C51C908D810088C10D /* Sources */,
+				FF6B50C61C908D810088C10D /* Frameworks */,
+				FF6B50C71C908D810088C10D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Send Mail";
+			productName = "Send SMS";
+			productReference = FF6B50C91C908D810088C10D /* Send Mail.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF6B50C11C908D810088C10D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Thomas Verschoren";
+				TargetAttributes = {
+					FF6B50C81C908D810088C10D = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = JWE5WW6J4L;
+					};
+				};
+			};
+			buildConfigurationList = FF6B50C41C908D810088C10D /* Build configuration list for PBXProject "Send Mail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF6B50C01C908D810088C10D;
+			productRefGroup = FF6B50CA1C908D810088C10D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF6B50C81C908D810088C10D /* Send Mail */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF6B50C71C908D810088C10D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6B50D51C908D810088C10D /* Assets.xcassets in Resources */,
+				FF557AEC1C90BAE7007DE147 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF6B50C51C908D810088C10D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6B50D31C908D810088C10D /* AppDelegate.applescript in Sources */,
+				FF6B50D11C908D810088C10D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF6B50DA1C908D810088C10D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FF6B50DB1C908D810088C10D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FF6B50DD1C908D810088C10D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Send SMS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.verschoren.Send-SMS";
+				PRODUCT_NAME = "Send Mail";
+			};
+			name = Debug;
+		};
+		FF6B50DE1C908D810088C10D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Send SMS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.verschoren.Send-SMS";
+				PRODUCT_NAME = "Send Mail";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF6B50C41C908D810088C10D /* Build configuration list for PBXProject "Send Mail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF6B50DA1C908D810088C10D /* Debug */,
+				FF6B50DB1C908D810088C10D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF6B50DC1C908D810088C10D /* Build configuration list for PBXNativeTarget "Send Mail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF6B50DD1C908D810088C10D /* Debug */,
+				FF6B50DE1C908D810088C10D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF6B50C11C908D810088C10D /* Project object */;
+}
